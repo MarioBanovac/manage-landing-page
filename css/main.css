@@ -852,10 +852,6 @@ video {
     max-width: 32rem;
   }
 
-  .sm\:max-w-xl {
-    max-width: 36rem;
-  }
-
   .sm\:max-w-sm {
     max-width: 24rem;
   }
@@ -864,14 +860,6 @@ video {
 @media (min-width: 768px) {
   .md\:mb-6 {
     margin-bottom: 1.5rem;
-  }
-
-  .md\:max-w-xl {
-    max-width: 36rem;
-  }
-
-  .md\:max-w-sm {
-    max-width: 24rem;
   }
 
   .md\:items-center {
