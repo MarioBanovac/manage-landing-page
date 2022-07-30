@@ -914,6 +914,20 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-colors {
+  transition-property: color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 :root{
   --brightRed:hsl(12, 88%, 59%);
 }
@@ -963,6 +977,31 @@ video {
   text-align: left;
 }
 
+.hover\:bg-gray-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-brightRedLight:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(12 88% 69% / var(--tw-bg-opacity));
+}
+
+.hover\:bg-brightRed:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(12 88% 59% / var(--tw-bg-opacity));
+}
+
+.hover\:text-brightRed:hover {
+  --tw-text-opacity: 1;
+  color: hsl(12 88% 59% / var(--tw-text-opacity));
+}
+
+.hover\:text-brightRedLight:hover {
+  --tw-text-opacity: 1;
+  color: hsl(12 88% 69% / var(--tw-text-opacity));
+}
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -986,24 +1025,6 @@ video {
   .md\:items-center {
     align-items: center;
   }
-
-  .md\:space-x-24 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(6rem * var(--tw-space-x-reverse));
-    margin-left: calc(6rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .md\:space-x-28 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(7rem * var(--tw-space-x-reverse));
-    margin-left: calc(7rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .md\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
-    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
-  }
 }
 
 @media (min-width: 1024px) {
@@ -1015,28 +1036,16 @@ video {
     position: relative;
   }
 
-  .lg\:right-0 {
-    right: 0px;
+  .lg\:right-20 {
+    right: 5rem;
   }
 
   .lg\:bottom-6 {
     bottom: 1.5rem;
   }
 
-  .lg\:right-10 {
-    right: 2.5rem;
-  }
-
-  .lg\:right-20 {
-    right: 5rem;
-  }
-
   .lg\:mb-8 {
     margin-bottom: 2rem;
-  }
-
-  .lg\:mb-56 {
-    margin-bottom: 14rem;
   }
 
   .lg\:block {
@@ -1089,10 +1098,6 @@ video {
     justify-content: flex-end;
   }
 
-  .lg\:justify-center {
-    justify-content: center;
-  }
-
   .lg\:justify-between {
     justify-content: space-between;
   }
@@ -1103,52 +1108,10 @@ video {
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
-  .lg\:space-y-12 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(3rem * var(--tw-space-y-reverse));
-  }
-
   .lg\:space-x-5 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(1.25rem * var(--tw-space-x-reverse));
     margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .lg\:space-x-44 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(11rem * var(--tw-space-x-reverse));
-    margin-left: calc(11rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .lg\:space-x-52 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(13rem * var(--tw-space-x-reverse));
-    margin-left: calc(13rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .lg\:space-x-16 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(4rem * var(--tw-space-x-reverse));
-    margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .lg\:space-x-20 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(5rem * var(--tw-space-x-reverse));
-    margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .lg\:space-x-1 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(0.25rem * var(--tw-space-x-reverse));
-    margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .lg\:space-x-12 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(3rem * var(--tw-space-x-reverse));
-    margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .lg\:space-x-14 > :not([hidden]) ~ :not([hidden]) {
@@ -1157,12 +1120,14 @@ video {
     margin-left: calc(3.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .lg\:space-y-reverse > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 1;
+  .lg\:space-y-12 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(3rem * var(--tw-space-y-reverse));
   }
 
-  .lg\:space-x-reverse > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 1;
+  .lg\:space-y-reverse > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 1;
   }
 
   .lg\:bg-transparent {
@@ -1172,21 +1137,6 @@ video {
   .lg\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-  }
-
-  .lg\:px-5 {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-
-  .lg\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-
-  .lg\:px-16 {
-    padding-left: 4rem;
-    padding-right: 4rem;
   }
 
   .lg\:px-20 {
@@ -1218,12 +1168,6 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:space-x-24 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(6rem * var(--tw-space-x-reverse));
-    margin-left: calc(6rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
   .xl\:space-x-48 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(12rem * var(--tw-space-x-reverse));
