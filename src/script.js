@@ -25,3 +25,21 @@ const swiper = new Swiper(".swiper", {
     clickable: true,
   },
 });
+
+const menuBtn = document.querySelector(".menu-btn");
+const hamburgerMenu = document.querySelector(".hamburger-menu");
+let isOpen = false;
+
+menuBtn.addEventListener("click", () => {
+  if (!isOpen) {
+    menuBtn.classList.add("open");
+    hamburgerMenu.classList.add("flex");
+    hamburgerMenu.classList.remove("hidden");
+    isOpen = true;
+  } else {
+    menuBtn.classList.remove("open");
+    hamburgerMenu.classList.remove("flex");
+    hamburgerMenu.classList.add("hidden");
+    isOpen = false;
+  }
+});
