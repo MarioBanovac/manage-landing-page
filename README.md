@@ -12,9 +12,28 @@ The challenge was to make the website as close as possible to the given design.
 ## Technologies I used to build the project
 
 - HTML
-- CSS
-- JS
 - Tailwind CSS
+- JS
 - Swiper JS
+
+# Usage
+
+Install dependencies (Tailwind)
+
+```
+npm install
+```
+
+Run the Tailwind CLI to compile the **src/input.css** during development. The output file is **css/main.css**
+
+```
+npm run watch
+```
+
+To build once run...
+
+```
+npm run build
+```
 
 **Have fun building!** 🚀
