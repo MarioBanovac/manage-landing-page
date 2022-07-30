@@ -1,5 +1,4 @@
 const swiper = new Swiper(".swiper", {
-  // Optional parameters
   direction: "horizontal",
   breakpoints: {
     1024: {
