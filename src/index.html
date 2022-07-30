@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -249,6 +249,77 @@
         >
       </div>
     </section>
+    <!-- Footer -->
+    <footer id="footer" class="bg-veryDarkBlue">
+      <div
+        class="container mx-auto flex flex-col items-center space-y-12 py-5 lg:flex lg:flex-row-reverse lg:justify-between lg:relative lg:py-10 lg:px-20"
+      >
+        <!-- Form -->
+        <div
+          class="w-full form-container flex flex-row justify-evenly items-center lg:w-fit lg:space-x-5"
+        >
+          <form>
+            <input
+              class="rounded-full px-6 py-2 placeholder:text-left focus:outline-none"
+              type="email"
+              placeholder="Updates in your inbox..."
+            />
+          </form>
+          <!-- Go Button -->
+          <a
+            href="#"
+            class="font-semibold bg-brightRed text-white uppercase shadow-md px-8 py-3 rounded-full"
+            >Go</a
+          >
+        </div>
+        <!-- Footer Links -->
+        <div
+          class="footer-links flex flex-row space-x-24 text-white lg:space-x-14 xl:space-x-48"
+        >
+          <ul class="flex flex-col space-y-1">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+          <ul class="flex flex-col space-y-1">
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <!-- Social icons & company logo -->
+        <div
+          class="flex flex-col space-y-12 lg:flex lg:flex-col-reverse lg:space-y-12 lg:space-y-reverse"
+        >
+          <div class="social-icons flex space-x-10 lg:space-x-5">
+            <a href="https://facebook.com" target="_blank">
+              <img src="../images/icon-facebook.svg" alt="Facebook logo" />
+            </a>
+            <a href="https://youtube.com" target="_blank">
+              <img src="../images/icon-youtube.svg" alt="Youtube logo" />
+            </a>
+            <a href="https://twitter.com" target="_blank">
+              <img src="../images/icon-twitter.svg" alt="Twitter logo" />
+            </a>
+            <a href="https://pinterest.com" target="_blank">
+              <img src="../images/icon-pinterest.svg" alt="Pinterest logo" />
+            </a>
+            <a href="https://instagram.com" target="_blank">
+              <img src="../images/icon-instagram.svg" alt="Instagram logo" />
+            </a>
+          </div>
+          <!-- Company logo -->
+          <img src="../images/logo.svg" alt="Company logo" />
+        </div>
+
+        <!-- Copyright text -->
+        <span
+          class="text-darkGrayishBlue text-xs lg:absolute lg:right-20 lg:bottom-6"
+          >Copyright 2020.All Rights Reserved</span
+        >
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>

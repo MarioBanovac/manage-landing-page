@@ -28,5 +28,6 @@ Your users should be able to:
 -CSS
 -JS
 -Tailwind CSS
+-Swiper JS
 
 **Have fun building!** 🚀
